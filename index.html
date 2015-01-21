@@ -29,12 +29,11 @@
   <div class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="active"><a href="#">LinkedIn</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
+      <li><a href="#">LinkedIn</a></li>
     </ul>
   </div>
-<section class="nav-seperator"></section>
 </nav>
 
 
@@ -42,24 +41,25 @@
 <section id="homepage-hero">
     <div class="row">
       <div class="large-12 columns main-hero text-center">
-        <h1>Do you need guidance or support with Agile?</h1>
+        <h1>Do you neeed guidance or support with Agile?</h1>
         <p><a href="#" class="small button">Let's Get in Touch</a><br/>
       </div>
     </div>
 </section>
 
 
-<br><br>
+
+    
     <div class="row">
       <div class="large-12 columns">
-      	<h2> What We Do</h2> 
-            <div class="seperator"></div>
+      	<h2 class="top-space bottom-space"> What We Do</h2> 
+            <!-- <div class="seperator"></div> -->
       </div>
     </div>
 
 
 
-        <div class="row bottom-space ">
+      <div class="row bottom-space ">
           <div class="large-12 medium-12 columns text-center">
             <h5>We specialise in working with forward thinking teams and organisations to <strong>improve speed</strong> and <strong>quality to market</strong> with a specific focus on agile and lean techniques.
             </h5>
@@ -80,10 +80,7 @@
              <h3>Training</h3>
           </div>
         </div>
-
-
-
-    </div>
+      </div>
 
         <!-- Grid Example -->
 
@@ -94,7 +91,7 @@
 <section id="mid-header-hero">
     <div class="row">
       <div class="large-12 columns main-hero text-center">
-        <h1>Need something to put here?</h1>
+        <h1>We are a team dedicated to your success</h1>
         <p>Maybe a slogan?</p>
       </div>
     </div>
@@ -109,18 +106,18 @@
 
 <!-- Bootstrap Carousel  -->
 
-<br><br>
+
  <div class="row">
       <div class="large-12 columns">
-          <h2> People are saying</h2> 
-             <div class="seperator"></div>
+          <h2 class="top-space"> People are saying</h2> 
+             <!-- <div class="seperator"></div> -->
       </div>
   </div>
 
-<section id="carousel">           
+<section id="carousel" class="top-space">           
   <div class="container outline">
     <div class="row">
-      <div class="large-12">
+      <div class="large-12 text-center" >
                 <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
         <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
           <!-- Carousel indicators -->
@@ -133,21 +130,29 @@
           <div class="carousel-inner">
             <div class="active item">
               <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
+                </p>
               </blockquote>
-              <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+              <div class="profile-circle person-a"></div>
+                    <h2 class="testimonial-name">John Somebody</h2>
+                    <h3 class="testimonial-job">Business Owner</h3>
             </div>
             <div class="item">
               <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
               </blockquote>
-              <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+             
+                <div class="profile-circle person-b"></div>
+                    <h2 class="testimonial-name">Jane Persons</h2>
+                    <h3 class="testimonial-job">Entrepeneur</h3>
             </div>
             <div class="item">
               <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
               </blockquote>
-              <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <div class="name">Someone's Name</div></div>
+              <div class="profile-circle person-c"></div>
+                    <h2 class="testimonial-name">John Dough</h2>
+                    <h3 class="testimonial-job">Startup Founder</h3>
             </div>
           </div>
         </div>
@@ -166,15 +171,20 @@
 
 
 
-<div class="seperator"></div>
 
-<div class="row">
+
+<div class="row top-space">
+
+
     <div class="large-12 columns text-center">
         <img src="img/coffee.png" alt="" class="we-do-icons coffee">
-          <h2> We love coffee!</h2>
-          <p>If you’re still not sure whether Agile training will help your organization, we’d be be happy to get in touch and tell you how we can help.</p>
+          <h2 class="coffee-h2"> We love coffee!</h2>
+          <p class="coffee-phone">If you’re still not sure whether Agile training will help your organization, we’d be be happy to get in touch and tell you how we can help.</p>
+          <h4 class="phone-number"><img class="phone" src="./img/phone.png" alt="">
+           <a href="#"> +44 (0) 217 096 2178</a></h4>
     </div>
-    <p class="text-center"><a href="#" class="small button">Let's Get in Touch</a><br/>
+    <p class="text-center">
+      <a href="#" class="small button">Let's Get in Touch</a>
 </div>
 
 
@@ -184,34 +194,31 @@
                 <h2> Some of our Clients Include</h2>
     </div>   
 
-    <div class="seperator"></div>
+    <!-- <div class="seperator"></div> -->
         <div class="row text-center">
         
-              <div class="small-6 medium-6 large-4 columns logo">
-                 <img src="img/swift-cover.png" alt="" class="coaching">
+              <div class="large-2 columns logo">
+                  <img src="img/axa.png" alt="" class="coaching square axa">
               </div>
 
-              <div class="small-6 medium-6 large-4 columns logo">
+              <div class=" large-2 columns logo">
+                 <img src="img/swift-cover.png" alt="" class="coaching swift-cover">
+              </div>
+
+              <div class="large-2 columns logo">
                   <img src="img/barclaycard.png" alt="" class="coaching">
               </div>
 
-
-
-              <div class="small-6 medium-6 large-4 columns logo">
-                  <img src="img/capital-one.png" alt="" class="coaching">
+              <div class="large-2 columns logo">
+                  <img src="img/capital-one.png" alt="" class="coaching capital-one">
               </div>
 
-
-              <div class="small-6 medium-6 large-4 columns logo">
-                  <img src="img/axa.png" alt="" class="coaching">
-              </div>
-
-              <div class="small-6 large-4 columns logo">
+              <div class="large-2 columns logo">
                  <img src="img/ignis.png" alt="" class="coaching">
               </div>
 
-              <div class="small-6 large-4 columns logo">
-                  <img src="img/cibc.png" alt="" class="coaching">
+              <div class="large-2 columns logo">
+                  <img src="img/cibc.png" alt="" class="coaching square cibc">
               </div>
 
         </div>
@@ -223,12 +230,14 @@
 
 <footer class="footer">
       <div class="row red">
-        Adaptavis
         <a href="#" class="button round ">
           <section class="carrot"> 
             ^
           </section>
-          </a>
+        </a>
+
+        <h3 class="text-left footer">Adaptavis</h3>
+
       </div> 
 <div class="clear"></div>
 </footer>
