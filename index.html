@@ -4,12 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/foundation.min.css" />
    <link rel="stylesheet" href="css/app.css" />
-   <link rel="stylesheet" href="css/magic.css">
+   <!-- <link rel="stylesheet" href="css/magic.css"> -->
    <link rel="stylesheet" href="css/animate.css">
+   
    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
     <script src="js/vendor/modernizr.js"></script>
 
   </head>
@@ -20,7 +23,7 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <h1><a href="#">Adaptavis</a></h1>
+      <h1><a class="pulse" href="#">Adaptavis</a></h1>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
@@ -41,7 +44,7 @@
 <section id="homepage-hero">
     <div class="row">
       <div class="large-12 columns main-hero text-center">
-        <h1>Do you neeed guidance or support with Agile?</h1>
+        <h1>Do you need guidance or support with Agile?</h1>
         <p><a href="#" class="small button">Let's Get in Touch</a><br/>
       </div>
     </div>
@@ -109,73 +112,102 @@
 
  <div class="row">
       <div class="large-12 columns">
-          <h2 class="top-space"> People are saying</h2> 
+          <h2 class="top-space bottom-space saying"> People are saying</h2> 
              <!-- <div class="seperator"></div> -->
       </div>
   </div>
-
-<section id="carousel" class="top-space">           
-  <div class="container outline">
-    <div class="row">
-      <div class="large-12 text-center" >
-                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-          <!-- Carousel indicators -->
-                  <ol class="carousel-indicators">
-            <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="active item">
-              <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
-                </p>
-              </blockquote>
-              <div class="profile-circle person-a"></div>
-                    <h2 class="testimonial-name">John Somebody</h2>
-                    <h3 class="testimonial-job">Business Owner</h3>
-            </div>
-            <div class="item">
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-             
-                <div class="profile-circle person-b"></div>
-                    <h2 class="testimonial-name">Jane Persons</h2>
-                    <h3 class="testimonial-job">Entrepeneur</h3>
-            </div>
-            <div class="item">
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-              <div class="profile-circle person-c"></div>
-                    <h2 class="testimonial-name">John Dough</h2>
-                    <h3 class="testimonial-job">Startup Founder</h3>
-            </div>
-          </div>
-        </div>
-      </div>              
-    </div>
-  </div>
-</section>
 
 
 
 <!-- End of Orbit Slider -->
 
+<!-- Updated Slider -->
+<div class="container outline">
+    <div class="row">
+                    <div class="large-12" data-wow-delay="0.2s">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Bottom Carousel Indicators -->
+
+                            <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
+                                </li>
+                            </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner text-center">
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                <p class="carousel-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat!</p>
+                                                <h2 class="testimonial-name">Joe Peoples</h2>
+                                                <h3 class="testimonial-job">Freelance Astronaut</h3>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                <p class="carousel-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                                 <h2 class="testimonial-name">John Somebody</h2>
+                                                 <h3 class="testimonial-job">Business Owner</h3>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                <p class="carousel-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lalaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                                <h2 class="testimonial-name">Jane Persons</h2>
+                                                <h3 class="testimonial-job">Entrepeneur</h3>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control">
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+</div>
 
 
-       
+<!--  -->
+
+
+
+
+
+
+
+
 
 
 
 
 
 <div class="row top-space">
-
-
     <div class="large-12 columns text-center">
         <img src="img/coffee.png" alt="" class="we-do-icons coffee">
           <h2 class="coffee-h2"> We love coffee!</h2>
@@ -236,7 +268,7 @@
           </section>
         </a>
 
-        <h3 class="text-left footer">Adaptavis</h3>
+        <h3 class="text-left footer ">Adaptavis</h3>
 
       </div> 
 <div class="clear"></div>
@@ -246,82 +278,6 @@
 
 
 
-<!-- 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>     
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
@@ -336,41 +292,4 @@
 
 
 
-
-
-
-
-<!-- 
-
-<section id="team">
-    <div class="row">
-      <div class="large-12 columns">
-        <h2> Meet the Team</h2>
-        <div class="seperator">
-        </div>
-      </div>
-     
-      <div class="row">
-          <div class="content-setting large-9 columns">
-              <h2 class="text-left">Alan Dean</h2>
-                  <p>Alan is a co-founder of Adaptavis and has a successful track record over more than a decade of bringing change and agility to teams of all sizes in both large and small enterprises.</p>
-          </div>
-
-           <div class="img-space large-3 columns ">
-             <img src="img/dean.png"  alt="">
-           </div>
-      </div>
-
-
-    <div class="row">
-        <div class="img-space large-3 columns">
-           <img src="img/james.png"  alt="">
-        </div>
-        <div class="content-setting large-9 columns">
-          <h2>James Enock</h2>
-          <p>James Enock is a partner at Adaptavis. He has a proven track record as a developer, team leader, senior manager, consultant, and agile coach and has worked with teams of all sizes.</p>
-        </div>
-    </div>
-  </div>
-</section> -->
 
