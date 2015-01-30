@@ -27,7 +27,7 @@ h2 {
 h3{
   color: #fe554f;
   font-size: 27px;
-  margin-top: 45px;
+  margin-top: 15px;
 }
 h4 {
   color: #BBC336;
@@ -44,10 +44,11 @@ h5 {
 .seperator{
    background: #ccc;
    height: 1px;
-   width: 80%;
+   width: 60%;
    margin: 50px auto;
    -webkit-border-radius: 50%;
            border-radius: 50%;
+   opacity: .6;
 }
 
 .testimonial-job {
@@ -69,7 +70,7 @@ h5 {
   width: 60%;
   margin: 0 auto;
   font-size: 21px;
-  padding: 20px 50px;
+  padding: 0 50px;
 }
 
 .coffee-h2 {
@@ -80,11 +81,13 @@ h5 {
 h4 a {
   color: #BBC336;
   font-weight: 800;
+  font-size: 19px;
 }
 
 .phone-number {
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
 }
 .top-bar {
    background: white;
@@ -106,7 +109,10 @@ h4 a {
           border-radius: 40%;
 }
 
-
+li.name h1 a:hover {
+  text-decoration: none;
+  color: red;
+}
 
 div.small-12.large-4.columns {
   margin-top: 10px;
@@ -115,7 +121,7 @@ div.small-12.large-4.columns {
 
 
 #homepage-hero {
- background: url("../img/main-hero.png") repeat scroll 0 0 #074E68;
+ /*background: url("../img/main-hero.png") repeat scroll 0 0 #074E68;*/
     background-position: center;
     background-repeat: no-repeat;
    -webkit-background-size: cover;
@@ -139,9 +145,7 @@ div.small-12.large-4.columns {
      -moz-animation: fadeInUp 1.5s;
        -o-animation: fadeInUp 1.5s;
           animation:  fadeInUp 1.5s;
-
 }
-
 
 
 #mid-header-hero {
@@ -152,27 +156,74 @@ div.small-12.large-4.columns {
    -webkit-background-size: cover;
         -o-background-size: cover;
            background-size: cover;
-    height: 650px;
-    padding: 100px 20px 0;
+    height: auto;
+    padding: 170px 20px 0;
     position: relative;
     text-align: left;
     margin-top: 15px;
+    height: 420px;
 }
 
-.saying {
+#mid-header-hero h1 {
+  -webkit-transition: .71s;
+     -moz-transition: .71s;
+      -ms-transition: .71s;
+       -o-transition: .71s;
+          transition: .71s;
+}
 
+
+
+
+
+section#myCarousel {
+  padding: 0;
+}
+
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+
+
+
+li a .nav-list {
+  background: red;
+}
+
+
+.saying {
   padding-bottom: 15px;
 }
 
 .main-hero {
    margin-top: 135px;
 }
-
 .main-hero p {
   margin-top: 50px;
-
 }
-
 .clients {
    background: #638db0;
    height: auto;
@@ -212,16 +263,39 @@ button.small, .button.small {
           transition: .7s;
 }
 
+.top-bar-section li:(.has-form) a {
+  background: red;
+}
+
 .top-space {
   margin-top: 60px;
 }
 
+.sep-space-top {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
 .bottom-space {
   margin-bottom: 35px;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: transparent;
+  color: #fe554f;
 
 }
 
 ol.gray {
+  background: red;
+}
+
+.fa-angle-up {
+  padding-top: 0;
+  margin-top: -30px;
+}
+
+ul.right li {
   background: red;
 }
 
@@ -280,6 +354,13 @@ ol.gray {
   color: #000;
 }
 
+ul.right li:hover {
+  background: none;
+}
+
+ul.right li a:hover {
+  background: red;
+}
 
 
 
@@ -303,14 +384,23 @@ ol.gray {
 
 
 
-
+/*
 section {
    padding: 70px 0;
-}
+}*/
 
 .clients h2 {
   color: white;
 }
+/*
+.left {
+  padding-top: 140px;
+}
+
+
+.right {
+  padding-top: 140px;
+}*/
 
 section.clients {
   padding: 10px;
@@ -350,11 +440,20 @@ margin-top: 100px;
 }
 
 .we-do-icons:hover {
-  -webkit-transform: scale(1.2);
-     -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-       -o-transform: scale(1.2);
-          transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+
+.icons-row {
+  -webkit-transition: .71s;
+     -moz-transition: .71s;
+      -ms-transition: .71s;
+       -o-transition: .71s;
+          transition: .71s;
 }
 
 .small {
@@ -522,7 +621,35 @@ blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child {
 
 /*End of Carousel*/
 
+.envelope-font {
+  margin-top: -20px;
 
+}
+
+
+.fa.fa-envelope-o {
+  color: #BBC336;
+
+  font-size: 24px;
+  margin-top: 5px;
+  
+}
+
+section.testimonial-carousel{
+  padding-bottom: 40px;
+}
+
+
+section.coffee {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+section.what-we-do {
+  margin-bottom: 60px;
+}
 
 /*New Carousel*/
 
@@ -567,8 +694,26 @@ i.fa.fa-chevron-right:hover {
   z-index: 90000;
 }
 
+
+a.carousel-control.right {
+  font-size: 70px;
+  opacity: .2;
+}
+
+a.carousel-control.mod-right  {
+  opacity: 1;
+}
+
+a.carousel-control.left {
+  font-size: 70px;
+  opacity: .2;
+}
+
+
+
 .carousel-control {
   opacity: 1;
+  padding-top: 120px;
 }
 
 
@@ -591,9 +736,11 @@ i.fa.fa-chevron-right:hover {
 }
 #quote-carousel .carousel-control.left {
     left: -60px;
+    padding-top: 0;
 }
 #quote-carousel .carousel-control.right {
     right: -60px;
+    padding-top: 0;
 }
 
 section.carousel-indicators {
@@ -612,7 +759,7 @@ background: red;
     height: 40px;
     margin: 5px;
     cursor: pointer;
-    border: 4px solid #CCC;
+    border: 3px solid #CCC;
     border-radius: 50px;
     opacity: 0.4;
     overflow: hidden;
@@ -627,10 +774,33 @@ background: red;
     opacity: 1;
     overflow: hidden;
 }
-/*.carousel-inner {
-    background: red;
+.img-a {
+  background: url("../img/main-hero.png");
+  height: 420px;
+   background-position: center;
+    background-repeat: no-repeat;
+   -webkit-background-size: cover;
+        -o-background-size: cover;
+           background-size: cover;
 }
-*/
+.img-b {
+  background: url("../img/group-photo.png");
+  height: 420px;
+   background-position: center;
+    background-repeat: no-repeat;
+   -webkit-background-size: cover;
+        -o-background-size: cover;
+           background-size: cover;
+}
+.img-c {
+  background: url("../img/slider-b.png");
+  height: 420px;
+   background-position: center;
+    background-repeat: no-repeat;
+   -webkit-background-size: cover;
+        -o-background-size: cover;
+           background-size: cover;
+}
 .carousel-font {
   color: rgb(34, 34, 34);
   font-size: 20px;
@@ -647,30 +817,62 @@ background: red;
     margin-right: 10px;
 
 }
-
 ol.carousel-indicators{
   text-align: right;
   width: 80%;
   position: absolute;
   bottom: -90px;
 }
-
-
 .coffee {
   margin-top: 60px;
-
+}
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
 
 
 
+/*
+.indicators-main {
+ text-align: center; 
+ width: 100%; 
+ bottom: 0;
+ background: red;
+ position: absolute;
+ left: 50%;
+z-index: 15;
+padding-left: 0;
+margin-left: -30%;
+list-style: none;
+}
+*/
 
 
+/*
+
+position: absolute;
+bottom: 10px;
+left: 50%;
+z-index: 15;
+width: 60%;
+padding-left: 0;
+margin-left: -30%;
+text-align: center;
+list-style: none;
 
 
-
-
-
-
+*/
 
 
 
@@ -684,15 +886,24 @@ ol.carousel-indicators{
    .img-space {
         text-align: center;
      }
-
      h5 {
         padding: 0;
-
+        margin-bottom: 0;
      }
 
      ul.right a {
       background: red;
      }
+
+
+  a.carousel-control.right {
+    display: none;
+  }
+
+a.carousel-control.left {
+    display: none;
+  }
+
 
 i.fa.fa-chevron-right {
   display: none;
@@ -707,12 +918,13 @@ i.fa.fa-chevron-left {
   }
 
   .we-do-icons h3{
-  margin-bottom: 0;
+  margin-bottom: 10px;
+
   }
 
   .we-do-icons {
         margin-top: 50px;
-      margin-bottom: -40px;
+
   }
 
 
@@ -743,8 +955,6 @@ div.small-12.large-4.columns {
   margin-bottom: 0;
     }
 
-
-
 }
 
 
@@ -753,9 +963,9 @@ div.small-12.large-4.columns {
 
 
 @media only screen and (min-width: 64.063em) {
-.coffee-phone {
-  padding: 0;
-}
+    .coffee-phone {
+      padding: 0;
+    }
 
 
   } /* min-width 1025px, large screens */
@@ -769,19 +979,14 @@ div.small-12.large-4.columns {
   padding-bottom: 80px;
 }
 
-  img.coaching {
-
-  }
-
 .logo {
 
   margin: 15px 0 ;
 }
 
   h3 {
-    margin-top: 0;
+    margin-top: 10px;
   }
-
 
 .square {
   margin-top: -10px;
@@ -819,6 +1024,10 @@ img.coaching.cibc {
     width: 140px;
     height: auto;
   }
+
+.bottom-row-icons {
+  margin-top: 60px;
+}
 
 
 
