@@ -747,6 +747,19 @@ section.carousel-indicators {
 background: red;
 }
 
+
+.btn-font {
+  text-transform: uppercase;
+}
+
+.btn-green {
+  background: green;
+}
+
+h1.green {
+  background: green;
+}
+
 /*#quote-carousel .carousel-indicators {
     right: 50%;
     top: auto;
