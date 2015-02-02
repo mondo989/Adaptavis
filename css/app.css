@@ -438,14 +438,14 @@ margin-top: 100px;
        -o-transition: .6s;
           transition: .6s;
 }
-
+/*
 .we-do-icons:hover {
     -webkit-transform: scale(1.1);
      -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
        -o-transform: scale(1.1);
           transform: scale(1.1);
-}
+}*/
 
 
 .icons-row {
@@ -549,6 +549,16 @@ section.carrot {
   right: 0;
 }
 
+a.right.carousel-control {
+  opacity: 1;
+
+}
+
+.mod-right {
+  opacity: 1;
+  background: red;
+}
+
 section#carousel {
   padding: 0;
 }
@@ -572,54 +582,6 @@ background:url("../img/jane.png")
 .person-c {
   background:url("../img/joe.png")
 }
-/*
-
-#fade-quote-carousel.carousel {
-  padding-bottom: 60px;
-}
-#fade-quote-carousel.carousel .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
-}
-#fade-quote-carousel.carousel .carousel-inner .active {
-  opacity: 1;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
-}
-#fade-quote-carousel.carousel .carousel-indicators {
-  bottom: 10px;
-}
-#fade-quote-carousel.carousel .carousel-indicators > li {
-  background-color: #e84a64;
-  border: none;
-}
-#fade-quote-carousel blockquote {
-    text-align: center;
-    border: none;
-}
-#fade-quote-carousel .profile-circle {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 100px;
-}
-
-
-
-
-blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child {
-  font-size: 1.0rem;
-  padding: 30px 30px 0 30px;
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-}
-*/
-
-/*End of Carousel*/
 
 .envelope-font {
   margin-top: -20px;
@@ -703,6 +665,16 @@ a.carousel-control.right {
 a.carousel-control.mod-right  {
   opacity: 1;
 }
+
+.fa.fa-chevron-right.mod-right {
+  background: red;
+  opacity: 1;
+}
+
+.threes {
+  background: #FFF;
+}
+
 
 a.carousel-control.left {
   font-size: 70px;
