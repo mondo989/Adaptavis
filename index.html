@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="css/app.css" />
    <!-- <link rel="stylesheet" href="css/magic.css"> -->
    <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/owl.css">
 
    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
@@ -19,9 +20,9 @@
   <body>
 
   <!-- This allows skrollr to work on mobile -->
-  <div id="skrollr-body">
+  <!-- <div id="skrollr-body"> -->
 
-
+<!-- Main Nav -->
 <nav class="top-bar" data-topbar role="navigation" id="top-of-page">
   <ul class="title-area">
     <li class="name">
@@ -33,12 +34,11 @@
   <div class="top-bar-section">
     <!-- Right Nav Section -->
      <ul class="right">
-   <!--    <li><a href="#">About</a></li> -->
          <li><a data-scroll href="#coffee-scroll">Contact</a></li>
-      <!-- <li><a href="#">LinkedIn</a></li> -->
     </ul>
   </div>
 </nav>
+<!-- End nav -->
 
 
 
@@ -69,6 +69,8 @@
         <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
     </div>
 </section>
+<!-- End of hero carousel -->
+
 
 <!-- What we do section -->
 <section class="what-we-do">
@@ -103,6 +105,7 @@
         </div>
       </div>
 </section>
+<!-- End of what we do section -->
 
 
 
@@ -110,18 +113,10 @@
 <section id="mid-header-hero">
     <div class="row">
       <div class="large-12 columns text-center">
-        <h1 
-        data-500="opacity: 0; margin-top: 100px;"
-        data-600="opacity: 1; margin-top: 0;"
-        >We are a team dedicated to your success</h1>
+        <h1>We are a team dedicated to your success</h1>
       </div>
     </div>
 </section>
-
-
-
-
-
 
 
 
@@ -229,51 +224,34 @@
     <div class="large-12 columns">
         <h2> Some of our Clients Include</h2>
     </div>
-    <div class="row text-center">
-          <div class="large-4 medium-6 columns threes logo">
-              <img src="img/bupa.png" alt="" class="coaching axa">
-          </div>
-          <div class=" large-4 medium-6 columns logo">
-             <img src="img/hitachi.png" alt="" class="coaching swift-cover">
-          </div>
-          <div class="large-4 medium-6 columns logo">
-              <img src="img/lloyds.png" alt="" class="coaching">
-          </div>
-          <div class="large-4 medium-6 columns logo">
-              <img src="img/capital-one.png" alt="" class="coaching capital-one">
-          </div>
-          <div class="large-4 medium-6 columns logo">
-             <img src="img/ignis.png" alt="" class="coaching">
-          </div>
-          <div class="large-4 medium-6 columns logo">
-              <img src="img/cibc.png" alt="" class="coaching square cibc">
-          </div>
-           <div class="large-4 medium-6 columns logo">
-              <img src="img/axa.png" alt="" class="coaching square axa">
-          </div>
-          <div class=" large-4 medium-6 columns logo">
-             <img src="img/swift-cover.png" alt="" class="coaching swift-cover">
-          </div>
-          <div class="large-4 medium-6 columns logo">
-              <img src="img/barclaycard.png" alt="" class="coaching">
-          </div>
-    </div>
+
+
+
+  <div id="owl-demo">
+      <div class="item"><img class="axa" src="img/axa.png" alt="Owl Image"></div>
+      <div class="item"><img class="barclaycard" src="img/barclaycard.png" alt="Owl Image"></div>
+      <div class="item"><img class="bupa" src="img/bupa.png" alt="Owl Image"></div>
+        <div class="item"><img class="swift-logo" src="img/swift-cover.png" alt="Owl Image"></div>
+
+      <div class="item"><img src="img/lloyds.png" alt="Owl Image"></div>
+      <div class="item"><img class="capone" src="img/capital-one.png" alt="Owl Image"></div>
+      <div class="item"><img class="hitachi" src="img/hitachi.png" alt="Owl Image"></div>
+       <div class="item"><img class="cibc-logo" src="img/cibc.png" alt="Owl Image"></div>
+</div>
+
 </section>
 
 
 
-<footer class="footer">
-      <div class="row red">
-        <a data-scroll href="#top-of-page" class="button round ">
-
-            <i class="fa fa-angle-up"></i>
-        </a>
-
-        <h3 class="text-left footer ">Adaptavis</h3>
-
-      </div>
-<div class="clear"></div>
-</footer>
+    <footer class="footer">
+          <div class="row red">
+              <a data-scroll href="#top-of-page" class="button round ">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+              <h3 class="text-left footer ">Adaptavis</h3>
+          </div>
+        <div class="clear"></div>
+    </footer>
 
 
 
@@ -283,8 +261,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/owl.js"></script>
 
-   
+  
+  <!-- For the owl scroller -->
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
 
 
   <script src="js/smooth-scroll.js"></script>
@@ -292,12 +283,12 @@
     smoothScroll.init();
 </script>
 
-
+<!-- Removing the skrollr script eliminates the android bug
  <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script type="text/javascript">
     var s = skrollr.init();
     </script>
-</body>
+ -->
 
 
   </body>
