@@ -7,12 +7,16 @@ font-weight: normal;
     font-style: normal;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 
 body,h1, h2, h3, h4, h5, h6 {
    overflow-x: hidden;
    font-family: 'GillSans' ;
    height: auto;
 }
+
 
 
 h1 {
@@ -445,6 +449,7 @@ margin-top: 100px;
 }*/
 
 
+
 .icons-row {
   -webkit-transition: .71s;
      -moz-transition: .71s;
@@ -604,23 +609,16 @@ background:url("../img/jane.png")
 
 .envelope-font {
   margin-top: -20px;
-
 }
-
-
 .fa.fa-envelope-o {
   color: #BBC336;
-
   font-size: 24px;
   margin-top: 5px;
-  
 }
 
 section.testimonial-carousel{
   padding-bottom: 40px;
 }
-
-
 section.coffee {
   margin-top: 0;
   padding-top: 0;
@@ -633,8 +631,6 @@ section.what-we-do {
 }
 
 /*New Carousel*/
-
-
 .fa {
   padding-top: 12px;
   opacity: 1;
@@ -920,6 +916,11 @@ ol.carousel-indicators{
       background: red;
      }
 
+     .footer h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 
   a.carousel-control.right {
     display: none;
@@ -1002,6 +1003,11 @@ div.small-12.large-4.columns {
 
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+ .footer h3 {
+    margin-left: 20px;
+
+}
 
 
 .clients .row {
